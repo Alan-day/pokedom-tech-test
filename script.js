@@ -1,9 +1,8 @@
 import { pokemonArray } from "./data/pokemon.js";
 
 const container = document.querySelector(".card-container");
-const button = document.querySelector(".btn");
 
-const handleClickFunction = (event) => {
+const displayPokemon = (event) => {
   pokemonArray.forEach((element) => {
     container.innerHTML += `<div class = "card">
     <div class = "card__content">
@@ -16,4 +15,4 @@ const handleClickFunction = (event) => {
   });
 };
 
-button.addEventListener("click", handleClickFunction);
+displayPokemon();
