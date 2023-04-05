@@ -6,12 +6,13 @@ const button = document.querySelector(".btn");
 const handleClickFunction = (event) => {
   pokemonArray.forEach((element) => {
     container.innerHTML += `<div class = "card">
-   ${element.id}
-   <h1 = "card__heading">  ${element.name}</h1>
-    ${element.types}
-    <img src =${element.sprite}>
-    
-    </div>`;
+    <div class = "card__content">
+   
+    <img class = "card__image" src =${element.sprite}>
+    <p class = "card__heading">  ${element.name}</p>
+    <p class = "card__text">${element.name} is a ${element.types} pokemon </p>
+    </div>
+    </div> `;
   });
 };
 
